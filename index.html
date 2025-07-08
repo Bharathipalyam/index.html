@@ -80,7 +80,7 @@
 
     body.dark-mode footer {
       background-color: #212529; /* dark theme */
-      color: red;
+      color: rgb(39, 23, 23);
     }
 
 
@@ -105,17 +105,16 @@ body.dark-mode .modal-content {
   color: #ffffff;
 }
 
-body.dark-mode .modal-header {
-  border-bottom: 1px solid #444;
+body.dark-mode .dark-mode-card {
+  background-color: #212529 !important; /* dark background */
+  color: #f8f9fa !important;           /* light text */
+  border-color: #444 !important;
 }
 
-body.dark-mode .modal-body {
-  color: #ffffff;
+body.dark-mode h2 {
+  color: #f8f9fa !important;
 }
 
-body.dark-mode .modal-title {
-  color: #ffffff;
-}
 
 
   </style>
@@ -146,7 +145,7 @@ body.dark-mode .modal-title {
 
   <main>
     <section id="home" class="hero py-5 text-center">
-      <h1>Welcome to My world</h1>
+      <h1>Welcome To My Portfolio</h1>
       <p class="lead">Hi, I'm Bharathi Palyam a Front-End Developer </p>
     </section>
 
@@ -160,54 +159,42 @@ body.dark-mode .modal-title {
         * React.js & bootstrap
         <br>
         * Responsive Design & cross-browser compatibility
-        <br>
 
-        With a strong eye for detail and a commitment to clean, efficient code, I love creating smooth and interactive
-        web experiences that enhance user engagement.
-
-
-      </p>
+</p>
     </section>
 
     <section id="projects" class="py-5 container">
-      <h2>Projects</h2>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card">
-            <div class="card-body">
-              <div>
-              <h5 class="card-title">Personal Portfolio <br>Website</h5>
-
-              <p class="card-text">Responsive portfolio site with projects, skills, and theme toggle.</p>
-              <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project1Modal">More Info</button>
-              </div>
-
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Student Result Management System </h5>
-              <p class="card-text">Web app to manage student marks and auto-calculate grades.
-
-              </p>
-              <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project2Modal">More Info</button>
-
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Ticket Management<br> System</h5>
-              <p class="card-text">A web dashboard to manage, assign, and track support tickets in real-time.</p>
-              <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project3Modal">More Info</button>
-            </div>
-          </div>
+  <h2 class="text-center mb-4">Projects</h2>
+  <div class="row">
+    <div class="col-md-4 mb-4">
+      <div class="card bg-light text-dark dark-mode-card">
+        <div class="card-body">
+          <h5 class="card-title">Personal Portfolio <br>Website</h5>
+          <p class="card-text">Responsive portfolio site with projects, skills, and theme toggle.</p>
+          <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project1Modal">More Info</button>
         </div>
       </div>
-    </section>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="card bg-light text-dark dark-mode-card">
+        <div class="card-body">
+          <h5 class="card-title">Student Result Management System</h5>
+          <p class="card-text">Web app to manage student marks and auto-calculate grades.</p>
+          <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project2Modal">More Info</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="card bg-light text-dark dark-mode-card">
+        <div class="card-body">
+          <h5 class="card-title">Ticket Management<br> System</h5>
+          <p class="card-text">A web dashboard to manage, assign, and track support tickets in real-time.</p>
+          <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project3Modal">More Info</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
     <section id="contact" class="py-5 container">
       <h2>Contact Me</h2>
